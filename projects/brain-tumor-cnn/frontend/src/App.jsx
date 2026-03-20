@@ -19,7 +19,7 @@ export default function App() {
       const formData = new FormData();
       formData.append("file", file);
       const response = await axios.post(
-        "http://localhost:8080/predict",
+        "/predict",
         formData
       );
       setResult(response.data);
